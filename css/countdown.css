@@ -1,0 +1,30 @@
+
+/* .count_down timer */
+.counter{
+    background: rgba(0, 0, 0, 0.35);
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+.count_title h4{
+    color: #2c2020;
+    font-size: 2em;
+    -webkit-text-stroke: 0.01em #fff;
+}
+.count_table{
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5em;
+}
+.weeks,.days,.hours,.minutes,.seconds{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2em;
+}
+.week_label,.day_label,.hours_label,.minute_label,.second_label{
+    color: #2c2020;
+    font-size: 1.5em;
+    margin-left: -0.8em;
+}

@@ -1,0 +1,254 @@
+/* Common Css Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+/* Common Css Stop */
+/* =============| Start |============ */
+.slide1_wrapper{
+    position: relative;
+}
+.slide1 .s_item1{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.slide1 .s_item1 img{
+    width: 100%;
+    height: 100vh;
+    cursor: grab;
+    z-index: 1;
+}
+.overley1{
+    background: rgba(0, 0, 0, 0.541);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 1.5em;
+    z-index: 2;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    margin: 0 auto;
+    color: #ececec;
+    text-align: center;
+    font-size: 2em;
+    z-index: 2;
+}
+/* arrow1 */
+.slide_btn .left,.slide_btn .right{
+    color: #fcfcfc;
+    background: #2c2020;
+    padding: 20px;
+    border-radius: 50%;
+    
+}
+.slide_btn .left{
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+.slide_btn .right{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+.slick-dots{
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slick-dots li{
+    display: inline-block;
+    margin-right: 10px;
+    background: green;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;    
+}
+.slick-dots li:last-child{
+    margin-right: 0;
+}
+.slick-dots li button{
+    color: transparent;
+    background: red;
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 50%;   
+    opacity: 0; 
+}
+.slick-dots li.slick-active button{
+    opacity: 1;
+}
+
+/* ============== slide 2*/
+.SliderPart2{
+    background: #faf0f0;
+    padding: 50px 0;
+}
+/* arrow2 */
+.slide2_wrapper{
+    position: relative;
+}
+.slide_btn2 .left2,.slide_btn2 .right2{
+    color: #2c2020;
+    background: transparent;
+    border: 1px solid #2c2020;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+}
+.slide_btn2 .right2:hover,.slide_btn2 .left2:hover{
+    background: #2c2020;
+    color: #fcfcfc;
+}
+ .slide_btn2 .left2{
+    position: absolute;
+    top: 50%;
+    left: -2.3rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+.slide_btn2 .right2{
+    position: absolute;
+    top: 50%;
+    right: -2.3rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+.slide2{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    
+}
+.slide_item2{
+    width: 100%;
+    height: 150px;
+    padding: 0.5rem 0.1rem;
+    cursor: grab;
+    overflow: hidden;
+}
+.s_item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    background: #fff;
+    text-align: center;
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 1em;
+    box-shadow: 0 0 5px 0 #000;
+}
+
+.s_item2 p{
+    font-size: 1.2em;
+    color: #2c2020;
+    text-transform: uppercase;
+}
+.s_item2 h4{
+    font-size: 2.2em;
+    color: #2c2020;
+    text-transform: uppercase;
+}
+.SliderPart2 .slick-center{
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.2) rotate(10deg);
+    
+}
+.SliderPart2 .slick-slide{
+    padding: 40px 0;
+}
+/* counter part */
+.counter_card{
+    display: flex;    
+}
+/* venu box */
+.venubox a img{
+    height: 200px;
+}
+.venubox{
+    display: flex;
+    gap: 10px;
+}
+
+/* mixit up */
+.mixitup{
+    padding: 50px 0;
+}
+.btn_group{
+    background: rgba(0, 0, 0, 0.493);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.btn_group button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #2c2020;
+    font-size: large;
+    transition: all linear 0.4s;
+}
+.btn_group button:hover{
+    background: rgba(0, 0, 0, 0.219);
+    color: #fcfcfc;
+}
+.itm_grp{
+    background: #0000001c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    padding-top: 40px;
+}
+.itm_grp img{
+    height: 200px;
+    width: 200px;
+
+}
+/* type js */
+.type_table{
+    background: rgba(0, 0, 0, 0.267);
+    padding: 50px 0;
+    text-align: center;
+}
+/* .type_table h1{} */
